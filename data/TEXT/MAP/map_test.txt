@@ -1,0 +1,59 @@
+#******************************************************************************
+#
+#       マップ情報スクリプトファイル[map_game.txt]
+#       Auther : Hodaka Niwa
+#
+#******************************************************************************
+SCRIPT				#この行は絶対に消さないこと！
+
+#------------------------------------------------------------------------------
+#  使用するテクスチャ数
+#------------------------------------------------------------------------------
+NUM_TEXTURE = 9
+
+#------------------------------------------------------------------------------
+#  使用するテクスチャのファイルパス名
+#------------------------------------------------------------------------------
+TEXTURE_FILENAME = data/TEXTURE/field000.jpg
+TEXTURE_FILENAME = data/TEXTURE/mountain000.png
+TEXTURE_FILENAME = data/TEXTURE/sky000.jpg
+TEXTURE_FILENAME = data/TEXTURE/bridge000.jpg
+TEXTURE_FILENAME = data/TEXTURE/gravel000.jpg
+TEXTURE_FILENAME = data/TEXTURE/grass000.png
+TEXTURE_FILENAME = data/TEXTURE/water000.jpg
+TEXTURE_FILENAME = data/TEXTURE/water001.png
+TEXTURE_FILENAME = data/TEXTURE/wall000.png
+
+#------------------------------------------------------------------------------
+#  使用するモデル数
+#------------------------------------------------------------------------------
+NUM_MODEL = 7
+
+#------------------------------------------------------------------------------
+#  使用するモデルのファイルパス名
+#------------------------------------------------------------------------------
+MODEL_FILENAME = data/MODEL/OBJECT/wood000.x
+MODEL_FILENAME = data/MODEL/OBJECT/wood001.x
+MODEL_FILENAME = data/MODEL/OBJECT/rock000.x
+MODEL_FILENAME = data/MODEL/OBJECT/rock001.x
+MODEL_FILENAME = data/MODEL/OBJECT/bridge000.x
+MODEL_FILENAME = data/MODEL/OBJECT/fence000.x
+MODEL_FILENAME = data/MODEL/OBJECT/goal000.x
+
+#------------------------------------------------------------------------------
+#  マップ情報
+#------------------------------------------------------------------------------
+MAPSET
+	FIELD_FILENAME = data/TEXT/MAP/FIELD/field000.txt				# 地面の情報が書かれたテキストファイル名
+	OBJECT_FILENAME = data/TEXT/MAP/OBJECT/object.txt				# 配置物の情報が書かれたテキストファイル名
+	MOUNTAIN_FILENAME = data/TEXT/MAP/MOUNTAIN/mountain000.txt		# 山の情報が書かれたテキストファイル名
+	SKY_FILENAME = data/TEXT/MAP/SKY/sky000.txt						# 空の情報が書かれたテキストファイル名
+	ENEMY_FILENAME = data/TEXT/MAP/ENEMY/enemy_set000.txt			# 敵の情報が書かれたテキストファイル名
+	BILLBOARD_FILENAME = data/TEXT/MAP/BILLBOARD/billboard000.txt	# 配置用ビルボード情報が書かれたテキストファイル名
+	EFFECT_FILENAME = data/TEXT/MAP/EFFECT/set_effect000.txt		# 配置エフェクトの情報が書かれたテキストファイル名
+	WALL_FILENAME = data/TEXT/MAP/WALL/wall000.txt					# 壁情報が書かれたテキストファイル名
+	PLAYER_DEFAULT_SPAWN = 0.0 0.0 0.0								# プレイヤーのデフォルトスポーン位置
+	CAMERA_DEFAULT_ROT = 0.0 0.0 0.0								# カメラのデフォルト向き
+END_MAPSET
+
+END_SCRIPT			#この行は絶対に消さないこと！
